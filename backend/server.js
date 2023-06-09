@@ -8,7 +8,7 @@ const app = express()
 
 
 //Modifier pour vous connecter a votre db
-mongoose.connect("mongodb+srv://nina:nina123@cluster0.jjomx6e.mongodb.net/?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect("mongodb+srv://<username>:<password>@cluster0.jjomx6e.mongodb.net/?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
 
 const db = mongoose.connection;
 db.on("error",
